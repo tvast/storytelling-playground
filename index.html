@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/init.css"  media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr.custom.js"></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+  <div class="container"> 
+      <!-- Codrops top bar -->
+      <div class="codrops-top clearfix">
+        <a href="http://tympanus.net/Tutorials/YouTubeLeftSideMenu/"><strong>&laquo; Previous Demo: </strong>YouTube Menu Effect</a>
+        <span class="right"><a href="http://tympanus.net/codrops/?p=14902"><strong>Back to the Codrops Article</strong></a></span>
+      </div>
+      <div class="os-phrases" id="os-phrases">
+        <h2>Sometimes it's better</h2>
+        <h2>to hide</h2>
+        <h2>in order to</h2>
+        <h2>survive evil</h2>
+        <h2>Thanatos</h2>
+        <h2>This fall</h2>
+        <h2>Prepare</h2>
+        <h2>Refresh to replay</h2>
+      </div>
+    </div><!-- /container -->
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+      })
+    </script>
+
+</body>
+</html>
